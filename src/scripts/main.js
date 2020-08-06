@@ -1,17 +1,19 @@
+//TODO : navTextAdded.active 
+
 // DOM Elements
-const navSpace = document.querySelector('.navLinks'); // Space where Li are inserted
-const navLinks = document.querySelectorAll('.navLinks li'); // Actual Li text
+const navSpace = document.querySelector('.navLinks'); // Space where ul are inserted
+const navLinks = document.querySelectorAll('.navLinks ul'); // Actual ul text
 const burger = document.querySelector('.burger');
 const sections = document.getElementsByTagName('section');
 
 
 // Creates a href and class navTextAdded & adds navLinks from HTML sections
-const addNavLi = sections => {
+const addNavUl = sections => {
   for (const section of sections) {
     let navText = section.getAttribute('navText');
     let sectId = section.getAttribute('id');
-    const liAdded = `<li><a href="#${sectId}" class="navTextAdded">${navText}</a></li>`;
-    navSpace.insertAdjacentHTML("beforeend", liAdded);
+    const ulAdded = `<ul><a href="#${sectId}" class="navTextAdded">${navText}</a></ul>`;
+    navSpace.insertAdjacentHTML("beforeend", ulAdded);
   }
 };
 
@@ -54,13 +56,24 @@ const returnTop = element => {
 }
 
 
-// Adds and removes sections to show active
+// Adds and removes styling to sections to show active
 const activeSection = (sections) => {
   for (const section of sections) {
     if (returnTop(section)) {
       section.classList.add('active');
     } else {
       section.classList.remove('active');
+    }
+  }
+}
+
+// Adds and removes styling to nav text to show active
+const activeNavText = (navLinks) => {
+  for (const navLink of navLinks) {
+    if (/*...*/) {
+      navLink.classList.add('active');
+    } else {
+      navLink.classList.remove('active');
     }
   }
 }
@@ -76,7 +89,7 @@ window.addEventListener('scroll', () => {
 
 
 // Run
-addNavLi(sections)
+addNavUl(sections)
 navSlide()
 animateLinks()
 animateBurger()

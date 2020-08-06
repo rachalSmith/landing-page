@@ -52,8 +52,9 @@ nav {
   padding: 10px;
 }
 
-.navTextAdded:hover {
-  text-transform: uppercase;
+.navLinks ul.active {
+  border-bottom: 3px solid rgba(26, 35, 20, 0.79);
+
 }
 
 .burger {
@@ -125,7 +126,7 @@ section.active {
     transition: transform 0.5s ease-in;
   }
 
-  .navLinks li {
+  .navLinks ul {
     opacity: 1;
   }
 
