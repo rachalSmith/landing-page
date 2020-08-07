@@ -37,7 +37,7 @@ nav {
 .logo {
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .navLinks {
@@ -52,7 +52,7 @@ nav {
   padding: 10px;
 }
 
-.navLinks ul.active {
+.ulActive {
   border-bottom: 3px solid rgba(26, 35, 20, 0.79);
 
 }

@@ -1,8 +1,5 @@
-//TODO : navTextAdded.active 
-
 // DOM Elements
 const navSpace = document.querySelector('.navLinks'); // Space where ul are inserted
-const navLinks = document.querySelectorAll('.navLinks ul'); // Actual ul text
 const burger = document.querySelector('.burger');
 const sections = document.getElementsByTagName('section');
 
@@ -57,7 +54,7 @@ const returnTop = element => {
 
 
 // Adds and removes styling to sections to show active
-const activeSection = (sections) => {
+const activeSection = sections => {
   for (const section of sections) {
     if (returnTop(section)) {
       section.classList.add('active');
@@ -68,15 +65,13 @@ const activeSection = (sections) => {
 }
 
 // Adds and removes styling to nav text to show active
-const activeNavText = (navLinks) => {
-  for (const navLink of navLinks) {
-    if (/*...*/) {
-      navLink.classList.add('active');
-    } else {
-      navLink.classList.remove('active');
-    }
-  }
-}
+const ulHighlight = () => {
+  let a = document.querySelectorAll('a');
+  a.forEach(link => {
+    link.classList.toggle('ulActive')
+    })
+};
+
 
 
 // Event listeners
@@ -86,6 +81,9 @@ burger.addEventListener('click', animateBurger);
 window.addEventListener('scroll', () => {
   activeSection(sections);
 })
+window.addEventListener('click', () => {
+  ulHighlight()
+} )
 
 
 // Run
@@ -93,3 +91,20 @@ addNavUl(sections)
 navSlide()
 animateLinks()
 animateBurger()
+
+
+
+
+
+
+// Adds and removes styling to nav text to show active
+// Needs to remove ulActive on next click 
+/*const a = document.querySelectorAll('a');
+
+a.forEach(link => {
+  link.addEventListener('click', function() {
+   //console.log('you just clicked')
+    link.classList.toggle('ulActive')
+  })
+
+})*/
