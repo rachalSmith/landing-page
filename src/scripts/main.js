@@ -64,15 +64,6 @@ const activeSection = sections => {
   }
 }
 
-// Adds and removes styling to nav text to show active
-const ulHighlight = () => {
-  let a = document.querySelectorAll('a');
-  a.forEach(link => {
-    link.classList.toggle('ulActive')
-    })
-};
-
-
 
 // Event listeners
 burger.addEventListener('click', navSlide);
@@ -81,9 +72,6 @@ burger.addEventListener('click', animateBurger);
 window.addEventListener('scroll', () => {
   activeSection(sections);
 })
-window.addEventListener('click', () => {
-  ulHighlight()
-} )
 
 
 // Run
@@ -94,17 +82,3 @@ animateBurger()
 
 
 
-
-
-
-// Adds and removes styling to nav text to show active
-// Needs to remove ulActive on next click 
-/*const a = document.querySelectorAll('a');
-
-a.forEach(link => {
-  link.addEventListener('click', function() {
-   //console.log('you just clicked')
-    link.classList.toggle('ulActive')
-  })
-
-})*/

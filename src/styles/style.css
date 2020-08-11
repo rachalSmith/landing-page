@@ -37,12 +37,13 @@ nav {
 .logo {
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .navLinks {
   display: flex;
   justify-content: space-around;
+  align-self: right;
   width: 50%;
 }
 
