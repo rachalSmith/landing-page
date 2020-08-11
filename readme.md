@@ -1,4 +1,5 @@
-Simple template landing page: 
+Practice for a dynamically built website using JS:
+
 
     Navigation created dynamically through HTML section elements.
     Mobile viewport with burger animation. 
