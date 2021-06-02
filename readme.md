@@ -7,3 +7,6 @@ Practice for a dynamically built website using JS:
     Mobile viewport with ease in animation of navigation elements. 
     Smooth scroll using CDN from gitHub.
     Highlight of active sections. 
+
+
+Project made for a Udacity course. 
