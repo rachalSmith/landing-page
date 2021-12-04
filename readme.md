@@ -1,12 +1,15 @@
-Practice for a dynamically built website using JS:
+# dynamic landing page 
 
+Using JS to dynamically build a page. 
 
-    Navigation created dynamically through HTML section elements.
-    Mobile viewport with burger animation. 
-    Mobile viewport with sliding navigation animation.
-    Mobile viewport with ease in animation of navigation elements. 
-    Smooth scroll using CDN from gitHub.
-    Highlight of active sections. 
+## Description
 
+Navigation created dynamically through HTML section elements.
 
-Project made for a Udacity course. 
+Mobile view with burger animation. 
+
+Mobile view with navigation animation.
+
+Smooth scroll using CDN.
+
+Highlight of active sections. 
